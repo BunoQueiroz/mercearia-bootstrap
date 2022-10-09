@@ -7,3 +7,18 @@
     color: darkred !important;
     font-weight: bold;
 }
+
+.presentation {
+    background-image: url(../img/banner-supermercado.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.font-header:hover {
+    text-decoration: underline;
+}
