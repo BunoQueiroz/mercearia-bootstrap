@@ -1,0 +1,9 @@
+.logo {
+    width: 5rem;
+}
+
+.font-header {
+    text-transform: uppercase;
+    color: darkred !important;
+    font-weight: bold;
+}
