@@ -19,6 +19,16 @@
     text-transform: uppercase;
 }
 
+.category-table {
+    width: 25%;
+}
+
 .font-header:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:540px) {
+    .p-xs {
+        padding: 0rem !important;
+    }
 }
