@@ -46,6 +46,10 @@
     border: 1px solid darkred !important;
 }
 
+.contact {
+    background: linear-gradient(blueviolet, rgb(189, 43, 226));
+}
+
 @media screen and (max-width:540px) {
     .p-xs {
         padding: 0rem !important;
