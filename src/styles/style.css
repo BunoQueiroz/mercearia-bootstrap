@@ -8,6 +8,10 @@
     font-weight: bold;
 }
 
+.font-wine {
+    color: darkred;
+}
+
 .presentation {
     background-image: url(../img/banner-supermercado.jpg);
     background-repeat: no-repeat;
@@ -25,6 +29,17 @@
 
 .font-header:hover {
     text-decoration: underline;
+}
+
+.call {
+    background: url(../img/banner-pessoaAoCelular.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.btn-call {
+    background-color: darkred !important;
+    border: 1px solid darkred !important;
 }
 
 @media screen and (max-width:540px) {
