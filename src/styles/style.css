@@ -62,14 +62,20 @@ body {
     .p-xs {
         padding: 0rem !important;
     }
+}
 
+@media screen and (max-width:767px) {
     .localization-map {
-        height: 30vh;
+        height: 20vh;
+    }
+
+    .list-link {
+        padding-bottom: 1rem;
     }
 }
 
 @media screen and (min-width:768px) {
     .localization-map {
-        height: 20vh;
+        height: 35vh;
     }
 }
