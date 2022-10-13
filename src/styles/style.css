@@ -1,21 +1,24 @@
+/* General */
 body {
     background-color: #cccccc10;
-}
-
-.logo {
-    width: 5rem;
-}
-
-.font-header {
-    text-transform: uppercase;
-    color: darkred !important;
-    font-weight: bold;
 }
 
 .font-wine {
     color: darkred;
 }
 
+.logo {
+    width: 5rem;
+}
+
+/* Header */
+.font-header {
+    text-transform: uppercase;
+    color: darkred !important;
+    font-weight: bold;
+}
+
+/* Main */
 .presentation {
     background-image: url(../img/banner-supermercado.jpg);
     background-repeat: no-repeat;
@@ -50,6 +53,7 @@ body {
     border: 1px solid darkred !important;
 }
 
+/* Footer */
 .contact {
     background: linear-gradient(blueviolet, rgb(189, 43, 226));
 }
@@ -58,6 +62,24 @@ body {
     width: 100%;
 }
 
+.btn-facebook {
+    background-color: blue;
+}
+
+.btn-whatsapp {
+    background-color: green;
+}
+
+.btn-instagram {
+    background: linear-gradient(-160deg, blue, #c00010, rgb(223, 223, 23))!important;
+    border: none;
+}
+
+.btn-twitter {
+    background-color: #20a0ff;
+}
+
+/* Medias Querys */
 @media screen and (max-width:540px) {
     .p-xs {
         padding: 0rem !important;
