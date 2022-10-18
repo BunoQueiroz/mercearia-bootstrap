@@ -1,0 +1,41 @@
+.presentation {
+    background-image: url(../img/banner-supermercado.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.mask {
+    background-color: #0000001f;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.category-table {
+    width: 25%;
+}
+
+.call {
+    background: url(../img/banner-pessoaAoCelular.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.btn-call {
+    background-color: darkred !important;
+    border: 1px solid darkred !important;
+}
+
+@media screen and (max-width:767px) {
+    .localization-map {
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .localization-map {
+        height: 35vh;
+    }
+}
