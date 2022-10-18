@@ -8,5 +8,5 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('fixed', 'py-0')
     }
-
+    
 });
