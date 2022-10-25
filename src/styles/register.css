@@ -24,6 +24,10 @@
     transition: all .5s;
 }
 
+.form-input[type='text']{
+    text-transform: capitalize;
+}
+
 .form-input:focus {
     background: none;
     box-shadow: none;

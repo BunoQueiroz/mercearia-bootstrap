@@ -30,32 +30,32 @@
     </nav>
   </header>
   <main>
-    <section class="container py-3 bg-light" id="register">
+    <section class="container py-3 bg-light" id="register-section">
       <div class="rounded mask d-flex justify-content-between bg-dark" id="mask">
-        <div class="rounded-start welcome text-center text-light px-5 d-flex flex-column align-items-center justify-content-evenly bg-success bg-opacity-50" id="welcome">
+        <div class="rounded-start welcome text-center text-light px-5 d-flex flex-column align-items-center justify-content-evenly bg-success bg-opacity-75" id="welcome">
           <h1 class="fw-bold">Seja Muito Bem Vindo!</h1>
           <h2>Estamos ansiosos para que você faça parte da nossa família</h2>
         </div>
-        <form class="rounded-end bg-primary bg-opacity-25 d-flex justify-content-center form-register" action="POST" id="register">
+        <form class="rounded-end bg-primary bg-opacity-50 d-flex justify-content-center form-register" action="POST"  id="register">
           <fieldset class="form-content d-flex p-4 rounded flex-column justify-content-center">
             <legend class="form-item text-center d-flex justify-content-center">
               <img src="img/icon.jpg" alt="Login icon" class="register-icon">
             </legend>
             <div class="form-item pb-3">
               <label for="inputName" class="form-label text-light fw-semibold m-0">Nome</label>
-              <input type="text" class="form-control text-light fst-italic form-input fw-semibold" id="inputName" aria-describedby="emailHelp" required>
+              <input type="text" name="name" class="form-control text-light fst-italic form-input fw-semibold" id="inputName" aria-describedby="emailHelp" required>
             </div>
             <div class="form-item pb-3">
               <label for="inputLastName" class="form-label text-light fw-semibold m-0">Sobrenome</label>
-              <input type="text" class="form-control text-light fst-italic form-input fw-semibold" id="inputLastName" aria-describedby="emailHelp" required>
+              <input type="text" name="lastName" class="form-control text-light fst-italic form-input fw-semibold" id="inputLastName" aria-describedby="emailHelp" required>
             </div>
             <div class="form-item pb-3">
               <label for="inputEmail" class="form-label text-light fw-semibold m-0">Email</label>
-              <input type="email" class="form-control text-light fst-italic form-input fw-semibold" id="inputEmail" aria-describedby="emailHelp" required>
+              <input type="email" name="email" class="form-control text-light fst-italic form-input fw-semibold" id="inputEmail" aria-describedby="emailHelp" required>
             </div>
             <div class="form-item pb-3">
               <label for="inputPassword" class="form-label text-light fw-semibold m-0">Senha</label>
-              <input type="password" class="form-control text-light fst-italic form-input fw-semibold" id="inputPassword" required>
+              <input type="password" name="password" class="form-control text-light fst-italic form-input fw-semibold" id="inputPassword" required>
             </div>
             <div class="mb-3 form-check d-flex justify-content-between">
               <div>
@@ -64,7 +64,7 @@
               </div>
               <a class="text-light" href="login.html">Já possui conta?</a>
             </div>
-            <button type="submit" class="fw-semibold btn btn-primary mb-2 align-self-center form-btn">Cadastrar-me</button>
+            <button type="submit" class="fw-semibold btn btn-primary mb-2 align-self-center form-btn" id="button-form">Cadastrar-me</button>
           </fieldset>
         </form>
       </div>
@@ -102,11 +102,12 @@
         </ul>
       </nav>
     </section>
-    <section class="container py-1 copyrigth bg-dark">
+    <section class="py-1 copyrigth bg-dark">
       <p class="text-light text-center fs-5 m-0">&copy; Todos os direitos reservados - 2022</p>
     </section>
   </footer>
 </body>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/form-validator.js"></script>
 </html>
