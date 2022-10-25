@@ -4,7 +4,7 @@ const btnForm = document.getElementById('button-form');
 btnForm.addEventListener('click', (event) => {
     event.preventDefault();
     const formObj = convertFormToObj(form);
-    if(nameValidator(formObj)){
+    if(nameAndLastNameValidator(formObj) && notEmptyForm(formObj)){
         console.log('Vai dar é certo pvt')
     }
 });
@@ -19,13 +19,34 @@ function convertFormToObj(form) {
     return form;
 }
 
-function nameValidator(formObj) {
+function nameAndLastNameValidator(formObj) {
+    let result = false;
+
     const reNumber = /\d/;
-    const str = formObj.name;
-    const result = reNumber.test(str);
+    const nameStr = formObj.name;
+    const lastNameStr = formObj.lastName;
+    const nameResult = reNumber.test(nameStr);
+    const lastNameResult = reNumber.test(lastNameStr);
     
-    if(result){
-        return false
+    if(nameResult || lastNameResult){
+        result = false
+    } else {
+        result = true
     }
-    return true
+    return result
+}
+
+function notEmptyForm(formObj){
+    const listValues = Object.values(formObj);
+    let result = true;
+
+    listValues.forEach( value => {
+        console.log(value)
+        if(value !== ''){
+            result = true
+        }else {
+            result = false
+        }
+    });
+    return result;
 }
