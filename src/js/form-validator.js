@@ -4,7 +4,7 @@ const btnForm = document.getElementById('button-form');
 btnForm.addEventListener('click', (event) => {
     event.preventDefault();
     const formObj = convertFormToObj(form);
-    if(nameAndLastNameValidator(formObj) && notEmptyForm(formObj) && emailValidator(formObj)){
+    if(formValidator(formObj)){
         console.log('Vai dar é certo pvt')
     }
 });
@@ -17,6 +17,14 @@ function convertFormToObj(form) {
         password: form.password.value,
     };
     return form;
+}
+
+function formValidator(formObj){
+    let result = false;
+    if(nameAndLastNameValidator(formObj) && notEmptyForm(formObj) && emailValidator(formObj) && passwordValidator(formObj)){
+        result = true
+    }
+    return result
 }
 
 function nameAndLastNameValidator(formObj) {
@@ -60,4 +68,17 @@ function emailValidator(formObj){
         result = true;
     }
     return result;
+}
+
+function passwordValidator(formObj){
+    const re = /(?=^.{8,}$)((?=.*\d)(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/g;
+    const passStr = formObj.password;
+    let result = false;
+    const passResult = re.test(passStr);
+
+    if (passResult) {
+        result = true
+    }
+    return result;
+
 }
