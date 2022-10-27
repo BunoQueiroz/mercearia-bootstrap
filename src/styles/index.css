@@ -5,6 +5,10 @@
     background-size: cover;
 }
 
+.presentation-description {
+    color: #101010;
+}
+
 .mask {
     background-color: #0000001f;
 }
