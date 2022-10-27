@@ -25,12 +25,13 @@ body {
 
 .font-header:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
-/* Footer */
 .contact {
     background: linear-gradient(blueviolet, rgb(189, 43, 226));
 }
+/* Footer */
 
 .localization-map {
     width: 100%;
