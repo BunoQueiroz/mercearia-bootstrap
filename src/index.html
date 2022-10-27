@@ -24,21 +24,57 @@
             <a class="fs-5 nav-link disabled font-header">Produtos</a>
             <a class="fs-5 nav-link font-header" href="login.html">Login</a>
             <a class="fs-5 nav-link font-header" href="register.html">Cadastro</a>
+            <a class="fs-5 nav-link font-header" data-bs-toggle="modal" data-bs-target="#modal">Contato</a>
           </div>
         </div>
       </div>
     </nav>
+    <section class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <aside class="modal-dialog">
+        <article class="modal-content rounded-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Fale Conosco</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body contact rounded-bottom">
+            <form class="container grid">
+              <div class="col-9 mb-1">
+                <label for="InputName" class="form-label text-light mb-0 fs-4">Nome completo</label>
+                <input type="text" class="form-control fw-semibold fs-5 py-0" id="InputName" required>
+              </div>
+              <div class="col-9 mb-1">
+                <label for="InputEmail" class="form-label text-light mb-0 fs-4">Email</label>
+                <input type="email" class="form-control fw-semibold fs-5 py-0" id="InputEmail" required>
+              </div>
+              <div class="col-9 mb-1">
+                <label for="InputWhatsapp" class="form-label text-light mb-0 fs-4">WhatsApp para contato</label>
+                <input type="number" class="form-control fw-semibold fs-5 py-0" id="InputWhatsapp" required>
+              </div>
+              <div class="col-9 mb-1">
+                <label for="InputMessage" class="form-label text-light mb-0 fs-4">Mensagem</label>
+                <textarea class="form-control fw-semibold fs-5 py-0" id="InputMessage" required cols="15" rows="5" required></textarea>
+              </div>
+              <div class="mb-3 form-check d-flex">
+                <input type="checkbox" class="form-check-input align-self-center" id="checkBox">
+                <label class="ps-2 form-check-labelc fs-5 text-light" for="checkBox">Guardar dados</label>
+              </div>
+              <button type="submit" class="btn btn-primary text-uppercase col-3">Enviar</button>
+            </form>
+          </div>
+        </article>
+      </aside>
+    </section>
   </header>
   <main>
     <section class="presentation">
       <div class="mask py-5">
         <article class="container">
           <h1 class="display-5 fw-semibold title text-center py-3">Bem Vindo(a) ao mercadinho eleni</h1>
-          <h4 class="display-6 fw-normal py-3">Somos uma mercearia disposta a oferecer aos nossos clientes um excelente serviço e entregar produtos de alta qualidade e preços 100% acecíveis</h4>
+          <h4 class="presentation-description display-6 fw-normal py-3">Somos uma mercearia disposta a oferecer aos nossos clientes um excelente serviço e entregar produtos de alta qualidade e preços 100% acecíveis</h4>
         </article>
       </div>
     </section>
-    <section class="container produtos">
+    <section class="container products">
       <h2 class="text-center py-3 display-6 fw-semibold">Conheça Alguns de Nossos Produtos</h2>
       <table class="table text-center">
         <thead>
@@ -91,32 +127,6 @@
         </p>
         <a class="col-6 col-md-4 col-lg-3 fs-4 py-1 text-uppercase btn btn-lg btn-primary btn-call" href="#">cadastre-se</a>
       </div>
-    </section>
-    <section class="text-light py-4 contact">
-      <h2 class="fs-2 text-center text-uppercase">Contato</h2>
-      <form class="container grid">
-        <div class="col-9 mb-1">
-          <label for="InputName" class="form-label mb-0 fs-4">Nome completo</label>
-          <input type="text" class="form-control fs-5 py-0" id="InputName" required>
-        </div>
-        <div class="col-9 mb-1">
-          <label for="InputEmail" class="form-label mb-0 fs-4">Email</label>
-          <input type="email" class="form-control fs-5 py-0" id="InputEmail" required>
-        </div>
-        <div class="col-9 mb-1">
-          <label for="InputWhatsapp" class="form-label mb-0 fs-4">WhatsApp para contato</label>
-          <input type="number" class="form-control fs-5 py-0" id="InputWhatsapp" required>
-        </div>
-        <div class="col-9 mb-1">
-          <label for="InputMessage" class="form-label mb-0 fs-4">Mensagem</label>
-          <textarea class="form-control fs-5 py-0" id="InputMessage" required cols="15" rows="5" required></textarea>
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <input type="checkbox" class="form-check-input align-self-center" id="checkBox">
-          <label class="ps-2 form-check-labelc fs-5" for="checkBox">Guardar dados</label>
-        </div>
-        <button type="submit" class="btn btn-primary text-uppercase col-3">Enviar</button>
-      </form>
     </section>
     <section class="institutional container">
       <h2 class="text-center fs-1 m-0 py-4">Institucional</h2>
