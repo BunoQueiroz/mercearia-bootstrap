@@ -16,6 +16,10 @@ body {
     width: 5rem;
 }
 
+.form-input--name{
+    text-transform: capitalize;
+}
+
 /* Header */
 .font-header {
     text-transform: uppercase;
