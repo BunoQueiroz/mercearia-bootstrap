@@ -1,12 +1,13 @@
+import { validation } from './validity.js';
+import { fixedNavbar } from './fixedNavbar.js';
+
 const navbar = document.querySelector('.navbar');
+const inputs = document.querySelectorAll('input');
 
-window.addEventListener('scroll', () => {
-    const { scrollTop, scrollHeight } = document.documentElement;
+fixedNavbar(navbar);
 
-    if(scrollTop > 120 && scrollHeight > 1000){
-        navbar.classList.add('fixed', 'py-0')
-    } else {
-        navbar.classList.remove('fixed', 'py-0')
-    }
-    
+inputs.forEach( input =>{
+    input.addEventListener('input', event =>{
+        validation(event.target);
+    }); 
 });
